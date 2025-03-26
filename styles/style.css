@@ -1,0 +1,110 @@
+body{
+    background-color: lightblue;
+    /*background-image:url("../images/union_jack.jpg");*/
+    }
+ul{
+    list-style: none;
+    text-align: center;
+
+
+}
+h1{
+    text-align: center;
+    font-family:serif;
+    padding-bottom: 25px;
+}
+.flex {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    text-decoration: none;
+    gap: 30px;
+}
+nav{
+    height: 100px;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    padding-bottom: 25px;
+    margin: auto;
+    gap: 15px;
+    justify-content: space-evenly;
+    font-size: 120%;
+}
+
+a{
+    text-decoration: none;
+    color: rgb(0, 0, 2);
+    }
+
+/*:hover is added below so that links turn red when the user hovers over them*/
+a:hover {
+    color: red;
+}
+div{
+    /*display: grid;
+    grid-template-columns: 40% 40%;*/
+}
+div img{
+    width: 300px;
+    height: auto;
+    border: 10px solid navy;
+    /*display: grid;*/
+    grid-template-columns: 40% 40%;
+    margin: 50px;
+    padding: 35px;
+    background-color: rgb(251, 230, 230);
+    border-radius: 50px;
+}
+.icon{
+    width: 100px;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.grid-container{
+    display: grid;
+    grid-template-columns: 40% 40%;
+    justify-content:space-between;
+    align-items: center;
+}
+.grid-container img{
+    width: 100%;
+}
+.current{
+    color: purple;
+}
+.resources{
+    display: flex;
+    font-size: 150%;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+div ul{
+    align-content:center;
+    width: 250px;
+}
+div li{
+    padding: 5px;
+}
+.float-left{
+    float:left;
+    margin: 10px;
+}
+.skip{
+    position: absolute; /*removes the link from the page*/
+    left: -1000px;
+}
+.skip:focus{
+position: static;/*returns the link to the page when the focus is on the link*/
+}
+p{
+    font-size: 120%;
+}
+p:nth-child(2){
+    font-style: italic;
+    color: red;
+}
